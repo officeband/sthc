@@ -1,6 +1,7 @@
 # sthc
 Sticky Table Headers And Columns
 
+<pre>
 Usage:
 <script>
 $(function(){
@@ -21,4 +22,4 @@ $(function(){
   </tr>
 </table>
 </html>
-
+</pre>
