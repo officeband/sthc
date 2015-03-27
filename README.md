@@ -1,4 +1,4 @@
-# sthc
+# Sticky Table Headers And Columns
 Sticky Table Headers And Columns
 
 
