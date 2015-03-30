@@ -1,4 +1,4 @@
-# Sticky Table Headers and Columns with no additional horizontal and vertical scroll bars
+# Sticky Table Headers and Columns
 Sticky table headers and columns with no additional horizontal and vertical scroll bars.
 
 
