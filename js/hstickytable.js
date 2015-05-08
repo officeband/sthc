@@ -1,13 +1,4 @@
-/*
- * Sticky Table Headers And Columns
- * Version: 1.0 20150327_00
- * 
- * Copyright (c) 2015 HOVERIO.COM
- * http://www.hoverio.com
- * 
- * License: MIT & GPL
- * 
- * Demo: https://office-band.appspot.com/sthc.html
+/**
  * 
  */
 
@@ -49,9 +40,15 @@ function stickyTableWindowOnScroll() {
 function stickyTable($e) {
 	$e.find('.stickyTableRowCol').each(function(){
     	$(this).css('width',$(this).css('width'));
+    	var keepTDHeight;
 		$(this).find('.stickyRow').find('td').each(function(){
 	    	$(this).css('width',$(this).css('width'));
-	    	$(this).css('height',$(this).css('height'));		
+	    	if (!keepTDHeight) {
+	    		// In IE, using $(this).css('height',$(this).css('height')) to change one TD's height 
+	    		// will increase other TDs' height, so we have to keep the same height.
+	    		keepTDHeight = $(this).css('height');
+	    	}
+	    	$(this).css('height',keepTDHeight);		
 		});
 		$(this).find('.stickyCol').each(function(){
 	    	$(this).css('width',$(this).css('width'));
