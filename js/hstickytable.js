@@ -1,4 +1,13 @@
-/**
+/*
+ * Sticky Table Headers And Columns
+ * Version: 1.0 20150327_00
+ * 
+ * Copyright (c) 2015 HOVERIO.COM
+ * http://www.hoverio.com
+ * 
+ * License: MIT & GPL
+ * 
+ * Demo: https://office-band.appspot.com/sthc.html
  * 
  */
 
