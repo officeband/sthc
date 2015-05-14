@@ -50,7 +50,7 @@ function stickyTable($e) {
 	$e.find('.stickyTableRowCol').each(function(){
     	$(this).css('width',$(this).css('width'));
     	var keepTDHeight;
-		$(this).find('.stickyRow').find('td').each(function(){
+		$(this).find('.stickyRow').children('TBODY').children('TR').children('TD').each(function(){
 	    	$(this).css('width',$(this).css('width'));
 	    	if (!keepTDHeight) {
 	    		// In IE, using $(this).css('height',$(this).css('height')) to change one TD's height 
@@ -119,7 +119,7 @@ function stickyTable($e) {
 			$fakeColTableBody.append($cloneTR);
 			if ($thisTR.hasClass('stickyRow')) {
 				$fakeRowColTable.find('tbody').append($cloneTR.clone());
-				$fakeRowColTable.find('TD').each(function(){
+				$fakeRowColTable.children('TBODY').children('TR').children('TD').each(function(){
 					$(this).css({
 						'border-bottom-color':'red'
 					});
@@ -142,7 +142,7 @@ function stickyTable($e) {
 
 		$(this).parent().prepend($fakeColTable);
 
-		$fakeRowTable.find('TD').each(function(){
+		$fakeRowTable.children('TBODY').children('TR').children('TD').each(function(){
 			$(this).css({
 				'border-bottom-color':'red'
 			});
